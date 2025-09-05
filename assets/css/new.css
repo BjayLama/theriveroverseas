@@ -1,0 +1,237 @@
+.banner-wrap {
+    position: relative;
+}
+
+#bgvid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 50px;
+    z-index: 1;
+}
+.banner-wrap.index-banner::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+    border-radius: 50px;
+
+}
+.banner-home__content {
+    z-index: 4;
+}
+/* .service__item-icon {
+    background-color: green;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 60px;
+    overflow: hidden;
+} */
+.service__item-icon img {
+    width: 100%;
+    height: 65%;
+    object-position: center center;
+    object-fit: contain;
+}
+.service__item-content {
+    width: calc(100% - 125px);
+}
+
+.doc-img {
+    width: 25px;
+}
+small {
+    font-size: 75%;
+}
+
+.pr-0 {
+    padding-right: 0;
+} 
+
+.award-wrap {
+    background: #fff;
+    /* border-bottom: 1px solid #F5F5F5; */
+    padding: 20px 35px 20px 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.award-icon img {
+    width: 55px;
+    object-fit: contain;
+}
+
+.award-info .info-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.info-detail p {
+    margin-bottom: 0 !important;
+    line-height: 1.2;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.info-foot {
+    display: flex;
+    /* align-items: center; */
+    gap: 15px;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.footer__widget-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.footer__widget-title h4 {
+    margin: 0;
+}
+.office-image img {
+    width: 30px;
+}
+
+.footer__widget {
+    padding-left: 30px;
+}
+.footer-wrap .child-wrap:first-child .footer__widget {
+    padding-left: 0px;
+}
+
+.footer__area-common.dark-green {
+    background-color: #004080 !important;
+}
+.footer__border-bottom {
+    border-color: #727272;
+}
+.footer__widget-title a:hover, .foot-info a:hover {
+    color: var(--rr-theme-primary);
+}
+
+@media only screen and (max-width: 1200px) {
+    .service__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .service__item-content {
+        width: 100%;
+    }
+    .choose-us__content-wrapper-box-title {
+        column-gap: 10px;
+    }
+    .footer3__item-2 {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .tab-none {
+        display: none;
+    }
+}
+.tab-only {
+    display: none;
+}
+@media only screen and (max-width: 991.9px) {
+    .choose-us__media {
+        max-width: 100%;
+    }
+    .banner-home .padding-space {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 70vh;
+    }
+    .banner-home__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px;
+        width: 70%;
+    }
+
+    .tab-only {
+        color: #fff;
+        margin-top: 10px;
+         display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .choose-us__content-wrapper {
+        flex-direction: column;
+    }
+    .choose-us__content-wrapper-box {
+        width: 100%;
+    }
+    .countries__tab-content {
+        column-gap: 20px;
+    }
+    .countries__tab-content__countries-name {
+        width: calc(50% - 20px);
+    }
+}
+@media only screen and (max-width: 600px) {
+        .banner-home .padding-space {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: calc(100vh - 80px);
+    }
+    .banner-home__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 15px 5px;
+        width: 100%;
+        padding-bottom: 35px;
+    }
+    .header__logo {
+        max-width: 110px;
+    }
+    .banner-wrap.index-banner::after, #bgvid, .banner-home {
+        border-radius: 20px;
+    }
+    .m-none {
+        display: none;
+    }
+
+    .small-mt {
+        margin-top: 30px;
+    }
+
+    .visa-category-2 .row {
+        --bs-gutter-x: 1.5rem
+    }
+    .countries__tab-content {
+        column-gap: 10px;
+    }
+    .countries__tab-content__countries-name {
+        width: calc(50% - 10px);
+    }
+}
+
+
