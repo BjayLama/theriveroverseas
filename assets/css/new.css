@@ -126,7 +126,7 @@ small {
     border-color: #727272;
 }
 .footer__widget-title a:hover, .foot-info a:hover {
-    color: var(--rr-theme-primary);
+    color: #717171;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -210,7 +210,7 @@ small {
         padding-bottom: 35px;
     }
     .header__logo {
-        max-width: 110px;
+        max-width: 140px;
     }
     .banner-wrap.index-banner::after, #bgvid, .banner-home {
         border-radius: 20px;
