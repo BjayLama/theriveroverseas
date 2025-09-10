@@ -37,7 +37,7 @@
     line-height: 60px;
     overflow: hidden;
 } */
-.service__item-icon img {
+.service__item-icon img, .service-card-icon img {
     width: 100%;
     height: 65%;
     object-position: center center;
@@ -128,7 +128,222 @@ small {
 .footer__widget-title a:hover, .foot-info a:hover {
     color: #717171;
 }
+/* Services */
+.service-number {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #D6D9DD;
+    font-size: 30px;
+    margin-top: 57px;
+    position: relative;
+    z-index: 1;
+}
 
+.service-number::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background: #D6D9DD;
+    width: 272px;
+    height: 1.5px;
+}
+.service-card-content {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.service-card-content .inner-content {
+    margin-top: 47px;
+    margin-bottom: -30px;
+}
+
+.more-btn img {
+    width: 75px;
+    object-fit: contain;
+}
+.service-card-item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  transition: all ease-in-out 0.5s;
+  margin-bottom: 35px;
+}
+
+.service-card-item:hover {
+    background-color: #254598;
+    transition: all ease-in-out 0.5s;
+}
+.service-card-item:hover .inner-content h4, .service-card-item:hover .inner-content p {
+    color: #fff;
+}
+.service-card-item .inner-content {
+    transition: all ease-in-out 0.4s;
+}
+.service-card-item:hover .inner-content {
+    margin-top: 20px;
+    margin-bottom: 0;
+    transition: all ease-in-out 0.4s;
+}
+.inner-content h4 {
+    margin-bottom: 10px;
+}
+
+.job-cards .latest-team__item-media {
+    margin-bottom: 35px;
+}
+
+.latest-team__item-media-img-title-text p.post-text {
+    font-weight: 600;
+}
+
+.pb-50 {
+    padding-bottom: 50px !important;
+}
+
+.job-image-detail {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.job-single-wrapper ul {
+    margin-top: 25px;
+    list-style-type: none;
+    margin-left: 10px;
+}
+.job-single-wrapper ul li {
+    margin-bottom: 7px;
+    position: relative;
+    padding-left: 20px;
+}
+.job-single-wrapper ul li::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #254598;
+    border-radius: 4px;
+}
+
+.job-sticky-wrapper {
+    position: sticky;
+    top: 100px;
+}
+
+.events-sec {
+    padding: 85px 0;
+}
+
+.events-wrapper {
+    border-radius: 16px;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.events-wrapper:hover .event-image img {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.4s;
+}
+
+.events-wrapper .event-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+
+}
+
+.events-wrapper .event-image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(176deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 41%, rgba(0, 0, 0, 0.65) 96%);
+    border-radius: 16px;
+    z-index: 3;
+
+
+}
+.events-wrapper .event-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    transform: scale(1);
+    transition: all ease-in-out 0.4s;
+}
+
+.event-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: #fff;
+    z-index: 4;
+    transition: all ease-in-out 0.4s;
+
+}
+
+.event-content .event-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contact-info__area {
+    padding: 85px 0;
+}
+.color-primary {
+    color: #254598;
+}
+.service-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d6d6d6;
+    transition: all ease-in-out 0.4s;
+}
+.service-list:last-of-type {
+    border: none;
+}
+
+.service-list:hover {
+    padding-left: 15px;
+    transition: all ease-in-out 0.4s;
+}
+
+.service-num {
+    color: transparent;
+    -webkit-text-stroke: 1px #254598;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-list .service-title {
+    font-size: 24px;
+    color: #254598;
+    font-weight: 600;
+}
+.color-black {
+    color: #727272 !important;
+}
 @media only screen and (max-width: 1200px) {
     .service__item {
         flex-direction: column;
