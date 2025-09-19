@@ -357,6 +357,13 @@ small {
     z-index: 2;
 }
 
+.label-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:  translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 1200px) {
     .service__item {
         flex-direction: column;

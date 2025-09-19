@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/vendor/custom-font.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/new.css">
+
+    <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
 </head>
 
 
@@ -188,13 +190,13 @@
                         <div class="breadcrumb__content">
                             <div class="breadcrumb__title-wrapper mb-15 mb-sm-10 mb-xs-5">
                                 <h1 class="breadcrumb__title color-white wow fadeIn animated" data-wow-delay=".1s">
-                                    Message From Chairman</h1>
+                                    Contact Us</h1>
                             </div>
                             <div class="breadcrumb__menu wow fadeIn animated" data-wow-delay=".5s">
                                 <nav>
                                     <ul>
                                         <li><span><a href="index.html">Home</a></span></li>
-                                        <li class="active"><span>Message From CHairman</span></li>
+                                        <li class="active"><span>Contact Us</span></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -204,100 +206,120 @@
             </div>
         </div>
 
-
-        <!--Story-->
-        <section class="story-details__area padding-t100 section-space-bottom overflow-hidden">
+        <!--contact-info-->
+        <section class="contact-info__area gray-bg section-space-bottom contact-us__area contact-us">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 order-2 order-md-2 order-lg-1">
-                        <div class="story-details__content">
-                            <h2 class="story-details__content-title mb-30 wow fadeInLeft animated" data-wow-delay=".2s">
-                                Message from Chairman</h2>
-                            <div class="story-details__content-icon mb-30 wow fadeInLeft animated" data-wow-delay=".3s">
-                                <svg width="96" height="76" viewBox="0 0 96 76" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.3"
-                                        d="M7.20616 36.59V36.5909C7.20616 38.4926 8.72059 40.007 10.6223 40.007H35.9984V74.5124H1.493V36.5909C1.493 18.8888 15.0229 4.28355 32.2581 2.56528V8.29926C25.5974 9.11479 19.4206 12.2568 14.833 17.194C9.9347 22.4655 7.21032 29.394 7.20616 36.59ZM94.401 40.007V74.5124H59.8956V36.5909C59.8956 18.8886 73.4264 4.28176 90.6997 2.56495V8.29661C76.5653 9.99792 65.6087 22.019 65.6087 36.5909C65.6087 38.4926 67.1232 40.007 69.0249 40.007H94.401Z"
-                                        stroke="#e9000c" stroke-width="2.93619" />
-                                </svg>
-                            </div>
-                            <p class=" wow fadeInLeft animated" data-wow-delay=".4s">
+                    <div class="col-md-10 offset-lg-1">
+                        <div class="contact-us__title-wrapper">
+                            <div class="contact-us__form-wrapper white-bg">
+                                <div class="form-heading text-center mb-40">
+                                    <h2 class="section__title-wrapper-title-2 mb-20 wow fadeInLeft animated"
+                                        data-wow-delay=".3s">
+                                        Apply Now</h2>
+                                    <h6 class="section__title-wrapper-black-subtitle text-center d-block mb-10 wow fadeInLeft animated"
+                                        data-wow-delay=".2s">We assist you with the best jobs. Hurry Up!!
+                                    </h6>
+                                </div>
+                                <form class="contact-us__form" id="contact-us__form" method="POST" action="./mail.php">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="contact-us__input wow fadeInLeft animated position-relative"
+                                                data-wow-delay=".4s">
+                                                <input name="photo" id="photo" type="file" class="dropify"
+                                                    placeholder="Full Name">
+                                                <label for="
+                                                " class="label-photo">Upload Your Photo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="contact-us__input wow fadeInLeft animated" data-wow-delay=".4s">
+                                                <span>Full Name</span>
+                                                <input name="email" id="email" type="email" placeholder="Full Name">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-paper-plane"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="contact-us__input wow fadeInLeft animated" data-wow-delay=".4s">
+                                                <span>Your Email</span>
+                                                <input name="email" id="email" type="email" placeholder="Your Email">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-paper-plane"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="contact-us__input wow fadeInLeft animated" data-wow-delay=".5s">
+                                                <span>Your Phone</span>
+                                                <input name="phone" id="phone" type="tel" placeholder="Your Phone">
+                                                <div class="icon icon-2">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                <strong>
-                                    Dear Valued Clients, <br>
-                                    Greetings ..!!
-                                </strong>
-                                <br>
-                                I would like to bring it to our prestigious client’s notice that The River Overseas (P.)
-                                Ltd., with its competent Staff members, stands for quality services in order to meet
-                                required demands of the clients. I am passionate about the work we do and how we go
-                                about our business every day.
-                                <br>
-                                I would like to bring it to our prestigious client’s notice that The River Overseas (P.)
-                                Ltd., with its competent Staff members, stands for quality services in order to meet
-                                required demands of the clients. I am passionate about the work we do and how we go
-                                about our business every day.
-                                <br><br>
-                                <strong>
-                                    - RAGHU PURI (CHAIRMAN)
-                                </strong>
-                            </p>
-                        </div>
-                        <div class="story-details__button mt-40 wow fadeInLeft animated" data-wow-delay=".6s">
-                            <a href="contact.html">Contact Us<i class="fa-solid fa-arrow-right"></i></a>
+                                        <div class="col-sm-6">
+                                            <div class="contact-us__input wow fadeInLeft animated" data-wow-delay=".5s">
+                                                <span>Permanent Address</span>
+                                                <input name="address" id="address" type="text"
+                                                    placeholder="Permanent Address">
+                                                <div class="icon icon-2">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="contact-us__input wow fadeInLeft animated" data-wow-delay=".5s">
+                                                <span>Current Address</span>
+                                                <input name="address" id="address" type="text"
+                                                    placeholder="Current Address">
+                                                <div class="icon icon-2">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="contact-us__textarea wow fadeInLeft animated"
+                                                data-wow-delay=".7s">
+                                                <span>Message</span>
+                                                <textarea name="textarea" id="textarea" cols="30" rows="10"
+                                                    placeholder="Write Message.."></textarea>
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="contact-us__input wow fadeInLeft animated" data-wow-delay=".5s">
+                                                <span>Upload Your CV</span>
+                                                <input name="address" id="address" type="file"
+                                                    placeholder="Current Address" hidden>
+                                                <div class="icon icon-2">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="submit" class="contact-btn mt-30 wow fadeInLeft animated"
+                                                data-wow-delay=".8s">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 order-1 order-md-1 order-lg-2">
-                        <div class="story-details__media wow fadeInLeft animated" data-wow-delay=".7s">
-                            <div class="story-details__media-wrapper">
-                                <div class="story-details__media-wrapper-left-shape">
-                                    <img src="./assets/imgs/story-details-right-shape1.png" alt="img not found">
-                                </div>
-                                <div class="story-details__media-wrapper-right-shape">
-                                    <img src="./assets/imgs/story-details-right-shape2.png" alt="img not found">
-                                </div>
-                            </div>
-                            <div class="story-details__media-thumb position-relative">
-                                <div class="story-details__media-thumb-box"></div>
-                                <img src="./assets/imgs/chairman.jpg" alt="img not found">
-                            </div>
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
         </section>
 
-
-
-        <!-- brand-area-start-->
-        <div class="rr-brand-area pb-30 align-items-center overflow-hidden">
-            <div class="rr-brand-wrapper">
-                <div class="container">
-                    <div class="rr-brand-active ">
-                        <div class="swiper-wrapper rr-slider-transition">
-                            <div class="swiper-slide ">
-                                <img src="assets/imgs/b1.png" alt="img not found">
-                            </div>
-                            <div class="swiper-slide ">
-                                <img src="assets/imgs/b2.png" alt="img not found">
-                            </div>
-                            <div class="swiper-slide ">
-                                <img src="assets/imgs/b3.png" alt="img not found">
-                            </div>
-                            <div class="swiper-slide ">
-                                <img src="assets/imgs/b4.png" alt="img not found">
-                            </div>
-                            <div class="swiper-slide ">
-                                <img src="assets/imgs/b5.png" alt="img not found">
-                            </div>
-                            <div class="swiper-slide ">
-                                <img src="assets/imgs/b6.png" alt="img not found">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
     </main>
@@ -551,6 +573,11 @@
     <script src="assets/js/plugins/parallax-scroll.js"></script>
     <script src="assets/js/plugins/jquery.countdown.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+
+    <script>
+        $('.dropify').dropify();
+    </script>
 </body>
 
 </html>
