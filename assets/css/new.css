@@ -228,7 +228,7 @@ small {
     border-radius: 4px;
 }
 
-.job-sticky-wrapper {
+.job-sticky-wrapper, .sticky-wrapper {
     position: sticky;
     top: 100px;
 }
@@ -358,11 +358,63 @@ small {
 }
 
 .label-photo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform:  translate(-50%, -50%);
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+.photo-wrap .dropify-wrapper .dropify-message {
+    display: none;
+}
+.photo-wrap {
+    max-width: 255px;
+    text-align: end;
+    margin-left: auto;
+}
+.dropify-wrapper .dropify-errors-container ul {
+    display: none;
+}
+.dropify-wrapper {
+    border-radius: 50px;
+    margin-bottom: 22px;
+}
+/* .dropify-wrapper.touch-fallback {
+    height: 200px !important;
+} */
+
+.photo-wrap .dropify-wrapper {
+    margin-bottom: 0;
+}
+
+.apply-now textarea {
+    margin-bottom: 30px;
+}
+.apply-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 50px;
+}
+
+.event-single .events-wrapper .event-image::before {
+    display: none;
+}
+
+.required-doc .service-list {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.required-doc .service-num {
+    font-size: 20px;
+}
+
+.required-doc .service-list .service-title {
+    font-size: 22px;
+}
+.breadcrumb__area {
+    position: relative;
+}
+
 
 @media only screen and (max-width: 1200px) {
     .service__item {
@@ -429,6 +481,11 @@ small {
     }
     .choose-us {
         margin-right: 0;
+    }
+    .photo-wrap {
+        max-width: 255px;
+        text-align: end;
+        margin-left: 0;
     }
 }
 @media only screen and (max-width: 768px) {
