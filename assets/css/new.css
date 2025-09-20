@@ -357,6 +357,10 @@ small {
     z-index: 2;
 }
 
+.counter__item:nth-last-of-type {
+    border-right: 0;
+}
+
 .label-photo {
    position: absolute;
     top: 50%;
@@ -414,8 +418,15 @@ small {
 .breadcrumb__area {
     position: relative;
 }
-
-
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.blog-content {
+    line-height: 1.2;
+}
 @media only screen and (max-width: 1200px) {
     .service__item {
         flex-direction: column;
