@@ -1404,7 +1404,7 @@ textarea {
 }
 @media only screen and (min-width: 576px) and (max-width: 768px), (max-width: 575px) {
   .section-space-top {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 }
 
@@ -2588,13 +2588,13 @@ textarea {
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .section-slider-title-2-wrapper-title {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 45px;
   }
 }
 @media (max-width: 575px) {
   .section-slider-title-2-wrapper-title {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 38px;
   }
 }
